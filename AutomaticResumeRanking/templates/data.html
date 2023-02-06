@@ -1,0 +1,170 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Upload</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{%static 'styles/upload.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+        <link href="{%static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="{%static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'styles/uploadheader.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'styles/responsive.css' %}">
+
+        <link rel="stylesheet" type="text/css" href="{%static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'vendor/animate/animate.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'vendor/select2/select2.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'vendor/perfect-scrollbar/perfect-scrollbar.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'styles/util_2.css' %}">
+        <link rel="stylesheet" type="text/css" href="{%static 'styles/main_2.css' %}">
+  	</head>
+
+	<body  style=" background: #76b852;">
+		<header class="header" >
+				<div class="container" >
+					<div class="row">
+						<div class="col">
+							<div class="header_content d-flex flex-row align-items-center justify-content-start">
+								<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+									<div class="logo" style="white-space: nowrap;"><a href="/">Automatic Resume Ranking</a></div>
+									<nav class="main_nav">
+										<ul class="d-flex flex-row align-items-start justify-content-start" >
+											<li class="active"><a href="/">Home</a></li>
+										{% if user.is_authenticated%}
+											<li><a href="uploadresumes">Upload Resumes</a></li>
+										{% endif %}
+											<li><a href="aboutus">About us</a></li>
+											<li><a href="contactus">Contact us</a></li>
+										{% if user.is_authenticated%}
+											<li style="color: #FFFFFF;"><b>Hello, {{user.first_name}}</b></li>
+											<li><a href="accounts/signout">Sign Out</a></li>
+										{% else %}
+											<li><a href="accounts/signin">Sign In</a></li>
+											<li><a href="accounts/signup">Sign Up</a></li>
+										{% endif %}
+										</ul>
+									</nav>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+		</header><br><br><br><br>
+
+		<div class="limiter" style=" background: #76b852;">
+			<div class="container-table100" style="max-width: 2000px; width: 98%;">
+				<div class="wrap-table100">
+					<div class="table100 ver1" style="z-index: 1000;">
+						<table style="background-color: white;">
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column7" style="padding-left: 40px; width: 170px;">#</th>
+									<th class="cell100 column7" style="padding-left: 40px;">Name</th>
+									<th class="cell100 column7" style="padding-left: 40px;">Degree</th>
+									<th class="cell100 column7" style="padding-left: 40px;">Educational Institute</th>
+									<th class="cell100 column7" style="padding-left: 40px;width: 170px;">Experience Time</th>
+									{% comment %} <th class="cell100 column1">Designitions</th> {% endcomment %}
+									<th class="cell100 column7" style="padding-left: 40px; width: 600px;">Skills</th>
+									{% comment %} <th class="cell100 column7" style="padding-left: 40px; width: 170px;">Score</th> {% endcomment %}
+										
+								</tr>
+							</thead>
+							<tbody>
+								{% for resume in resumes %}
+									<tr class="row100 body">
+										<td class="cell100 column7"style="padding-left: 40px;width: 75;">
+											{{ forloop.counter }}
+										</td>
+										<td class="cell100 column7"style="padding-left: 40px;">{{resume.person_name}}</td>
+										<td class="cell100 column7"style="padding-left: 40px;">
+											{% for x in  resume.edu_id.all %}
+												{{x.degree}}<br>
+											{% endfor %}
+										</td>
+
+										<td class="cell100 column7"style="padding-left: 40px;">
+											{% for x in  resume.edu_id.all %}
+												{{x.institute}}<br>
+											{% endfor %}
+										</td>
+										<td class="cell100 column7"style="padding-left: 40px;width: 120px;">
+											{% for x in  resume.exp_id.all %}
+												{{x.experience_time}} Year
+											{% endfor %}
+										</td>
+										{% comment %} <td class="cell100 column1">
+											{% for x in  resume.exp_id.all %}
+												{{x.designition}}
+											{% endfor %}
+										</td> {% endcomment %}
+										<td class="cell100 column7"style="padding-left: 40px;  width: 600px;">
+											{% for x in  resume.ski_id.all %}
+												{{x.total_skills}}, 
+											{% endfor %}
+										</td>
+										{% comment %} <td class="cell100 column7"style="padding-left: 40px; width: 75;">
+											{% for x in  resume.score_id.all %}
+												{{x.score}}
+											{% endfor %}
+										</td> {% endcomment %}
+									</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+				<div>
+					<button onclick="location.href='/'" style="display:inline">Homepage</button>
+					<button onclick="location.href='uploadresumes'" style="display:inline">Upload More Resumes</button>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+		<!--===============================================================================================-->	
+		<script src="{%static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+		<!--===============================================================================================-->
+		<script src="{%static 'vendor/bootstrap/js/popper.js' %}"></script>
+		<script src="{%static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+		<!--===============================================================================================-->
+		<script src="{%static 'vendor/select2/select2.min.js' %}"></script>
+		<!--===============================================================================================-->
+		<script src="{%static 'vendor/perfect-scrollbar/perfect-scrollbar.min.js' %}"></script>
+		<script>
+			$('.js-pscroll').each(function(){
+				var ps = new PerfectScrollbar(this);
+
+				$(window).on('resize', function(){
+					ps.update();
+				})
+
+				$(this).on('ps-x-reach-start', function(){
+					$(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+				});
+
+				$(this).on('ps-scroll-x', function(){
+					$(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+				});
+
+			});
+
+			
+			
+			
+		</script>
+		<!--===============================================================================================-->
+		<script src="{%static 'js/main.js' %}"></script>
+
+	</body>
+</html>

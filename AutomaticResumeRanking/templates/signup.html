@@ -1,0 +1,192 @@
+{% load static %}
+
+<!--
+<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <a href="/"><h5>Go To Home</h5></a>
+        <form action="register" method="post">
+            {% csrf_token %}
+            <input type="text" name="first_name" placeholder="First Name"> <br>
+            <input type="text" name="last_name" placeholder="Last Name"> <br>
+            <input type="text" name="username" placeholder="User Name"> <br>
+            <input type="email" name="email" placeholder="Email"> <br>
+            <input type="password" name="password1" placeholder="Enter Password"> <br>
+            <input type="password" name="password2" placeholder="Confirm Password"> <br>
+            <input type="submit">
+
+        </form>
+
+        <div>
+            {% for message in messages%}
+                <b>{{message}}</b>
+            {% endfor %}
+        </div>
+
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{%static 'styles/signlogin_style.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+
+<form action="signup" method="post">
+    {% csrf_token %}
+	<h1>Create Account</h1>
+	<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>or use your email for registration</span>
+	<input type="text" name="first_name" placeholder="First Name"> <br>
+    <input type="text" name="last_name" placeholder="Last Name"> <br>
+    <input type="text" name="username" placeholder="User Name"> <br>
+    <input type="email" name="email" placeholder="Email"> <br>
+    <input type="password" name="password1" placeholder="Enter Password"> <br>
+    <input type="password" name="password2" placeholder="Confirm Password"> <br>
+	<input type="submit" name="Sign Up">
+     <div>
+            {% for message in messages%}
+                <b>{{message}}</b>
+            {% endfor %}
+        </div>
+</form>
+</div>
+<div class="form-container sign-in-container">
+	<form action="signin" method="post">
+        {% csrf_token %}
+		<h1>Sign In</h1>
+		<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>or use your account</span>
+	<input type="text" name="username" placeholder="Username">
+	<input type="password" name="password" placeholder="Password">
+	<input type="submit" name="Sign In">
+     <div>
+            {% for message in messages%}
+                <b>{{message}}</b>
+            {% endfor %}
+     </div>
+	</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+        <div class="overlay-panel overlay-right">
+			<h1>Hello, Friend!</h1>
+			<p>Enter your details and start journey with us</p>
+			<button class="ghost" id="signUp">Sign Up</button>
+		</div>
+		<div class="overlay-panel overlay-left">
+			<h1>Welcome Back!</h1>
+			<p>To keep connected with us please login with your personal info</p>
+			<button class="ghost" id="signIn">Sign In</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="signup_styles.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="{%static 'styles/signup_style.css' %}" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1>SignUp Form</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="signup" method="post">
+                     {% csrf_token %}
+                    <input class="text" type="text" name="first_name" placeholder="First Name" required=""><br>
+                    <input class="text" type="text" name="last_name" placeholder="Last Name" required=""><br>
+                    <input class="text" type="text" name="username" placeholder="User Name"required="">
+                    <input class="text email" type="email" name="email" placeholder="Email"required="">
+                    <input class="text w3lpass" type="password" name="password1" placeholder="Enter Password"required="">
+                    <input class="text w3lpass" type="password" name="password2" placeholder="Confirm Password"required="">
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="SIGN UP">
+                    <div align="center">
+                        {% for message in messages%}
+                            <b style="color:white;">{{message}}</b>
+                        {% endfor %}
+                    </div>
+				</form>
+				<p>Already have an Account? <a href="signin"> Login Now!</a></p><br>
+				<p>Go Back to <a href="/"> Home Page</a></p>
+			</div>
+            
+		</div>
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+</body>
+</html>

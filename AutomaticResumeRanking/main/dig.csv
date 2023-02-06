@@ -1,0 +1,156 @@
+A.A.,Associate of Arts,10
+M.S.,Masters,25
+M.S,Masters,25
+B.E.,Bachelor,15
+A.A.S.,Associate of Applied Science,10
+A.A.T.,Associate in Applied Technology,10
+A.O.T.,Associate in Occupational Technology,10
+A.S.,Associate of Science,10
+B.A.,Bachelor of Arts,15
+B.A.B.A.,Bachelor of Arts of Business Administration,15
+B.A.Com.,Bachelor of Arts in Communication,15
+B.A.E.,Bachelor of Aerospace Engineering,15
+B.A.Ed.,Bachelor of Arts in Education,15
+B.Arch.,Bachelor of Architecture,15
+B.A.S.,Bachelor of Applied Science,15
+B.B.A.,Bachelor of Business Administration,15
+B.B.E.,Bachelor of Biosystems Engineering,15
+B.C.E.,Bachelor of Civil Engineering,15
+B.Che.E.,Bachelor of Chemical Engineering,15
+B.E.E.,Bachelor of Electrical Engineering,15
+B.F.A.,Bachelor of Fine Arts,15
+B.G.S.,Bachelor of General Studies,15
+B.I.Arch.,Bachelor of Interior Architecture,15
+B.In.Dsn.,Bachelor of Industrial Design,15
+B.I.S.,Bachelor of Interdisciplinary Studies,15
+B.I.S.E.,Bachelor of Industrial & Systems Engineering,15
+B.L.A.,Bachelor of Liberal Arts,15
+B.M.,Bachelor of Music,15
+B.M.E.,Bachelor of Mechanical Engineering,15
+B.M.Ed.,Bachelor of Music Education,15
+B.Mtl.E.,Bachelor of Materials Engineering,15
+B.P.F.E.,Bachelor of Polymer and Fiber Engineering,15
+B.P.H.S.,Bachelor of Professional Health Science,15
+B.S.,Bachelor of Science,15
+B.S.A.E.,Bachelor of Science in Aerospace Engineering,15
+B.S.B.A.,Bachelor of Science in Business Administration,15
+B.S.B.M.E.,Bachelor of Science in Biomedical Engineering,15
+B.S.C.B.A.,Bachelor of Science in Commerce Business Administration,15
+B.S.C.E.,Bachelor of Science in Civil Engineering,15
+B.S.Che.E.,Bachelor of Science in Chemical Engineering,15
+B.S.Chem.,Bachelor of Science in Chemistry,15
+B.S.C.S.,Bachelor of Science in Computer Science,15
+B.S.E.,Bachelor of Science in Engineering,15
+B.S.Ed.,Bachelor of Science in Education,15
+B.S.E.E.,Bachelor of Science in Electrical Engineering,15
+B.S.E.T.,Bachelor of Science in Engineering Technology,15
+B.S.Geo.,Bachelor of Science in Geology,15
+B.S.H.E.S.,Bachelor of Science in Human Environmental Sciences,15
+B.S.M.E.,Bachelor of Science in Mechanical Engineering,15
+B.S.Met.,Bachelor of Science in Metallurgical Engineering,15
+B.S.Micr.,Bachelor of Science in Microbiology,15
+B.S.Mt.E.,Bachelor of Science in Materials Engineering,15
+B.S.N.,Bachelor of Science in Nursing,15
+B.S.S.W.,Bachelor of Science in Social Work,15
+B.S.W.,Bachelor of Social Work,15
+B.Sw.E.,Bachelor of Software Engineering,15
+B.T.E.,Bachelor of Textile Engineering,15
+B.T.M.T.,Bachelor of Textile Management and Technology,15
+B.W.E.,Bachelor of Wireless Engineering,15
+LL.M.,Master of Law in Taxation,25
+M.A.,Master of Arts,25
+M.Acc.,Master of Accountancy,25
+M.Acct.,Master of Accounting,25
+M.A.E.,Master of Aerospace Engineering,25
+M.A.Ed.,Master of Arts in Education,25
+M.Agric.,Master of Agriculture,25
+M.A.M.,Master of Applied Mathematics,25
+M.Aqua.,Master of Aquaculture,25
+M.A.T.,Master of Arts in Teaching,25
+M.B.A.,Master of Business Administration,25
+M.B.C.,Master of Building Construction,25
+M.C.D.,Master of Communication Disorders,25
+M.C.E.,Master of Civil Engineering,25
+M.Che.E.,Master of Chemical Engineering,25
+M.Com.,Master of Communication,25
+M.Comm.Pl.,Master of Community Planning,25
+M.Ed.,Master of Education,25
+M.E.E.,Master of Electrical Engineering,25
+M.Eng.,Master of Engineering,25
+M.F.A.,Master of Fine Arts,25
+M.His.St.,Master of Hispanic Studies,25
+M.H.S.,Master of Health Science,25
+M.I.D.C.,Master of Integrated Design and Construction,25
+M.In.Dsn.,Master of Industrial Design,25
+M.I.S.E.,Master of Industrial & Systems Engineering,25
+M.L.A.,Master of Liberal Arts,25
+M.L.Arch.,Master of Landscape Architecture,25
+M.L.I.S.,Master of Library & Information Studies,25
+M.M.,Master of Music,25
+M.M.E.,Master of Mechanical Engineering,25
+M.Mtl.E.,Master of Materials Engineering,25
+M.N.A.,Master of Nurse Anesthesia,25
+M.N.R.,Master of Natural Resources,25
+M.P.A.,Master of Public Administration,25
+M.P.H.,Master of Public Health,25
+M.Prob.S.,Master of Probability and Statistics,25
+M.Pr.S.,Master of Professional Studies,25
+M.P.S.,Master of Political Science,25
+M.P.T.C.,Master of Technical & Professional Communication,25
+M.R.C.,Master of Rehabilitation Counseling,25
+M.R.E.D.,Master of Real Estate Development,25
+M.S.,Master of Science,25
+M.S,Master of Science,25
+M.S.A.E.,Master of Science in Aerospace Engineering,25
+M.S.B.M.E.,Master of Science in Biomedical Engineering,25
+M.S.B.M.S.,Master of Science in Basic Medical Sciences,25
+M.S.C.,Master of Science in Commerce,25
+M.S.C.E.,Master of Science in Civil Engineering,25
+M.S.Che.E.,Master of Science in Chemical Engineering,25
+M.S.Chem.,Master of Science in Chemistry,25
+M.S.C.J.,Master of Science in Criminal Justice,25
+M.S.C.S.,Master of Science in Computer Science,25
+M.S.E.,Master of Science in Environmental Engineering,25
+M.S.Ed.,Master of Science in Education,25
+M.S.E.E.,Master of Science in Electrical Engineering,25
+M.S.E.S.M.,Master of Science in Engineering Science & Mechanics,25
+M.S.F.S.,Master of Science in Forensic Science,25
+M.S.H.A.,Master of Science in Health Administration,25
+M.S.H.E.S.,Master of Science in Human Environmental Sciences,25
+M.S.H.I.,Master of Science in Health Informatics,25
+M.S.I.E.,Master of Science in Industrial Engineering,25
+M.S.I.L.A.,Master of Science in Instructional Leadership Administration,25
+M.S.I.S.,Master of Science in Information Systems,25
+M.S.J.P.S.,Master of Science in Justice and Public Safety,25
+M.S.M.E.,Master of Science in Mechanical Engineering,25
+M.S.Met.,Master of Science in Metallurgical Engineering,25
+M.S.M.Sci.,Master of Science in Marine Science,25
+M.S.Mt.E.,Master of Science in Materials Engineering,25
+M.S.N.,Master of Science in Nursing,25
+M.S.O.R.,Master of Science in Operations Research,25
+M.S.O.T.,Master of Science in Occupational Therapy,25
+M.S.P.A.S.,Master of Science in Physician Assistant Studies,25
+M.S.P.H.,Master of Science in Public Health,25
+M.S.S.E.,Master of Science in Software Engineering,25
+M.S.W.,Master of Social Work,25
+M.Sw.E.,Master of Software Engineering,25
+M.T.A.,Master of Tax Accounting,25
+M.Tx.,Master of Taxation,25
+M.U.R.P.,Master of Urban and Regional Planning,25
+Ed.S.,Education Specialist,25
+Au.D.,Doctor of Audiology,35
+D.B.A.,Doctor of Business Administration,35
+D.M.A.,Doctor of Musical Arts,35
+D.M.D.,Doctor of Medical Dentistry,35
+D.N.P.,Doctor of Nursing Practice,35
+D.P.T.,Doctor of Physical Therapy,35
+Dr.P.H.,Doctor of Public Health,35
+D.Sc.,Doctor of Science,35
+D.V.M.,Doctor of Veterinary Medicine,35
+Ed.D.,Doctor of Education,35
+J.D.,Doctor of Jurisprudence,35
+M.D.,Doctor of Medicine,35
+O.D.,Doctor of Optometry,35
+Pharm.D.,Doctor of Pharmacy,35
+Ph.D.,Doctor of Philosophy,35
+,Bachelor of Technology in Computer Science Engineering,15
